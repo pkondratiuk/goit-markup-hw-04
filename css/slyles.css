@@ -117,6 +117,7 @@ p {
 }
 
 .nav-list {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -125,6 +126,17 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.nav-list.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .nav-list:hover,
@@ -180,6 +192,7 @@ p {
   |============================
 */
 .hero {
+  /* max-width: 1440px; */
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -312,6 +325,9 @@ p {
 .card-team-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-container {
@@ -478,4 +494,19 @@ p {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+/* Overlay */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 360px;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms;
+}
+.thumb-img {
+  position: relative;
+  transform: translateY(0);
 }
