@@ -406,7 +406,7 @@ p {
 }
 .costumers-link:hover,
 .costumers-link:focus {
-  border: 1px solid #404bbf;
+  color: #404bbf;
 }
 .costumers-link:hover .costumers-icon,
 .costumers-link:focus .costumers-icon {
@@ -414,7 +414,7 @@ p {
   border-color: #404bbf;
 }
 .costumers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 .title-costumers {
   font-size: 36px;
