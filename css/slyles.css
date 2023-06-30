@@ -407,6 +407,7 @@ p {
 .costumers-link:hover,
 .costumers-link:focus {
   color: #404bbf;
+  border-color: #404bbf;
 }
 .costumers-link:hover .costumers-icon,
 .costumers-link:focus .costumers-icon {
