@@ -245,12 +245,12 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  transition: background-color #404bbf 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #404bbf;
 
   cursor: pointer;
 }
@@ -444,12 +444,13 @@ p {
   display: flex;
 }
 .container-nav-footer {
-  margin: 0 auto;
+  margin-right: 120px;
 }
 
 .footer-container {
   display: flex;
   margin: 0;
+  align-items: baseline;
 }
 
 .footer-social {
