@@ -139,6 +139,10 @@ p {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  bottom: -1px;
+}
+.active {
+  color: #404bbf;
 }
 
 .nav-list:hover,
