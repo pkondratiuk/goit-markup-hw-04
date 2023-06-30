@@ -245,6 +245,7 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color #404bbf 250ms ubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
