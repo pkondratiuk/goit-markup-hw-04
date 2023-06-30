@@ -284,6 +284,7 @@ p {
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /**
@@ -371,6 +372,9 @@ p {
 .social-icon {
   fill: #f4f4fd;
 }
+.social-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /**
   |============================
@@ -405,7 +409,7 @@ p {
 }
 .costumers-link:hover .costumers-icon,
 .costumers-link:focus .costumers-icon {
-  color: #404bbf;
+  fill: #404bbf;
   border-color: #404bbf;
 }
 .costumers-icon {
