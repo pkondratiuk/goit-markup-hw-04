@@ -10,6 +10,7 @@
   --btn-bg-cl: #f4f4fd;
   --title-cl: #2e2f42;
   --btn-cl-border: #e7e9fc;
+  --costumers-link-cl: #8e8f99;
 }
 
 body {
@@ -128,6 +129,7 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list.active::after {
   content: "";
@@ -147,8 +149,6 @@ p {
 
 .nav-list:hover,
 .nav-list:focus {
-  ransition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #404bbf;
 }
 .adress {
@@ -163,12 +163,11 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list:hover,
 .adress-list:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #404bbf;
 }
 
@@ -213,7 +212,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office\ 1.png);
+    url(../images/hero/people-office.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -362,12 +361,11 @@ p {
   align-items: center;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 .social-icon {
@@ -395,22 +393,27 @@ p {
   align-items: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--costumers-link-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .costumers-item {
 }
-.costumers-link:hover {
+.costumers-link:hover,
+.costumers-link:focus {
   border: 1px solid #404bbf;
 }
 .costumers-link:hover .costumers-icon,
 .costumers-link:focus .costumers-icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #404bbf;
+  color: #404bbf;
+  border-color: #404bbf;
 }
 .costumers-icon {
   fill: #8e8f99;
 }
 .title-costumers {
+  font-size: 36px;
+  line-height: 1.11;
   color: #2e2f42;
 
   text-align: center;
@@ -467,18 +470,17 @@ p {
   align-items: center;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-footer-social {
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #31d0aa;
 }
 .social-icon {
@@ -613,8 +615,9 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.7);
-  transition: opacity 250ms ease-out, visibility 250ms ease-out;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -631,10 +634,12 @@ p {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 408px;
-  height: 584px;
-  background-color: #fff;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: opacity 250ms ease-out, transform 250ms ease-out;
+  transition: ransform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -653,19 +658,29 @@ p {
   height: 24px;
   padding: 0;
   border: none;
-  border-radius: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-name-modal {
   width: 360px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-name-modal {
-  background-color: transparent;
+.btn-name-modal:hover,
+.btn-name-modal:focus {
+  fill: #ffffff;
 }
+
 .modal-name-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
 }
